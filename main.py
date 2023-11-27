@@ -3,14 +3,9 @@ import hashlib
 import json
 import time
 from io import BytesIO
-
-from flask import Flask, jsonify, request
 from PIL import Image
 
-from roll_animal_siamese_model import RollAnimalSiameseModel
-
-app = Flask(__name__)
-PORT = 8181
+from app.routers.openai_arkose.funcaptcha_server.roll_animal_siamese_model import RollAnimalSiameseModel
 
 animal_model = RollAnimalSiameseModel("model.onnx")
 
@@ -48,36 +43,4 @@ def process_data(data):
         ans["status"] = "error"
         ans["solution"]["objects"] = []
 
-    return jsonify(ans)
-
-
-# curl --location --request POST 'http://127.0.0.1:8191/createTask' \
-# --header 'Content-Type: application/json' \
-# --data-raw '{
-#     "clientKey": "bb11d056130b5e41f3d870edfa21c6a4",
-#     "task": {
-#         "type": "FunCaptcha",
-#         "image": "data:image/jpeg;base64,base64图片编码"
-#         "question": "4_3d_rollball_animals"
-#     }
-# }'
-@app.route("/createTask", methods=["POST"])
-def create_task():
-    # 获取请求数据
-    data = request.get_json()
-    return process_data(data)
-
-
-# 捕获异常
-@app.errorhandler(Exception)
-def error_handler(e):
-    return jsonify({
-        "errorId": 1,
-        "errorCode": "ERROR_UNKNOWN",
-        "status": "error",
-        "solution": {"objects": []}
-    })
-
-
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", debug=True, port=PORT)
+    return ans
