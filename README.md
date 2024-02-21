@@ -1,6 +1,6 @@
 # 📝 FuncaptchaServer
 
-> 📝 基于🔗 [Siamese-Pytorch ](https://github.com/MagicalMadoka/siamese-pytorch)训练的Funcaptcha类型的3D_Rollball_Animals图片识别服务器
+> 📝 基于🔗 [MagicalMadoka/funcaptcha-challenger](https://github.com/MagicalMadoka/funcaptcha-challenger)的图片识别服务器
 
 ## 🔍️ **支持模型**
 -  SUPPORTED MODELS:
