@@ -4,19 +4,31 @@ import time
 from io import BytesIO
 
 from PIL import Image
-from flask import Flask, jsonify, request
+from fastapi import FastAPI, HTTPException, Request
 from funcaptcha_challenger import predict
+from pydantic import BaseModel
 
 from util.log import logger
 from util.model_support_fetcher import ModelSupportFetcher
 
-app = Flask(__name__)
-PORT = 8080
+app = FastAPI()
+PORT = 8181
 IS_DEBUG = True
 fetcher = ModelSupportFetcher()
 
 
-def process_image(base64_image, variant):
+class Task(BaseModel):
+    type: str
+    image: str
+    question: str
+
+
+class TaskData(BaseModel):
+    clientKey: str
+    task: Task
+
+
+def process_image(base64_image: str, variant: str):
     if base64_image.startswith("data:image/"):
         base64_image = base64_image.split(",")[1]
 
@@ -28,11 +40,12 @@ def process_image(base64_image, variant):
     return ans
 
 
-def process_data(data):
-    client_key = data["clientKey"]
-    task_type = data["task"]["type"]
-    image = data["task"]["image"]
-    question = data["task"]["question"]
+@app.post("/createTask")
+async def create_task(data: TaskData):
+    client_key = data.clientKey
+    task_type = data.task.type
+    image = data.task.image
+    question = data.task.question
     ans = {
         "errorId": 0,
         "errorCode": "",
@@ -50,31 +63,26 @@ def process_data(data):
         ans["status"] = "error"
         ans["solution"]["objects"] = []
 
-    return jsonify(ans)
+    return ans
 
 
-@app.route("/createTask", methods=["POST"])
-def create_task():
-    data = request.get_json()
-    return process_data(data)
-
-
-@app.route("/support")
-def support():
+@app.get("/support")
+async def support():
     # 从文件中读取模型列表
-    return jsonify(fetcher.supported_models)
+    return fetcher.supported_models
 
 
-@app.errorhandler(Exception)
-def error_handler(e):
-    logger.error(f"error: {e}")
-    return jsonify({
+@app.exception_handler(Exception)
+async def error_handler(request: Request, exc: Exception):
+    logger.error(f"error: {exc}")
+    return {
         "errorId": 1,
         "errorCode": "ERROR_UNKNOWN",
         "status": "error",
         "solution": {"objects": []}
-    })
+    }
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", debug=IS_DEBUG, port=PORT)
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=PORT)

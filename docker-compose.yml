@@ -1,0 +1,11 @@
+version: '3'
+services:
+  funcaptcha-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8181:8181"
+    volumes:
+      - ./local_resource:/container/mount/point
+    restart: always
