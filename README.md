@@ -1,8 +1,8 @@
 # 📝 FuncaptchaServer
 
-> 📝 基于🔗 [MagicalMadoka/funcaptcha-challenger](https://github.com/MagicalMadoka/funcaptcha-challenger)的图片识别服务器
+> 📝 Based on🔗 [MagicalMadoka/funcaptcha-challenger](https://github.com/MagicalMadoka/funcaptcha-challenger) Image recognition server
 
-## 🔍️ **支持模型**
+## 🔍️ **Supported models**
 -  SUPPORTED MODELS:
 
 |                         |                         |                         |                         |
@@ -16,29 +16,29 @@
 
 
 - https://github.com/MagicalMadoka/funcaptcha-challenger/releases/download/model/version.json
-- http://部署的api端口/support
+- http://Deployed API port/support
 
-- Funcaptcha其他类型欢迎PR.
+- Funcaptcha Other types welcome PR.
 
-## 🐅 项目介绍
+## 🐅 Project Introduction
 
-### ⬇️ **部署相关**
+### ⬇️ **Deployment-related**
 
-- **📡 依赖安装**:
+- **📡 Installation dependency**:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-- **📡 运行**:
+- **📡 Run**:
 
 ```bash
 python main.py
 ```
 
-## 🖼️ 使用示例
+## 🖼️ Example of use
 
-- **📡 示例curl命令**:
+- **📡 Example curl command**:
 
 ```bash
 curl --location --request POST 'http://127.0.0.1:8181/createTask' \
@@ -53,7 +53,7 @@ curl --location --request POST 'http://127.0.0.1:8181/createTask' \
 }'
 ```
 
-- **📡 响应示例**:
+- **📡 Response Example**:
 
 ```json
  {
@@ -69,8 +69,11 @@ curl --location --request POST 'http://127.0.0.1:8181/createTask' \
 }
 ```
 
-- **📡 识别说明**:
+- **📡 Identification instructions**:
 
-> errorId: 0 表示识别成功\
-> objects: 对应识别结果\
-> *从0开始计数，`"objects": [4]` 表示识别结果为序列4，与手指对应
+> errorId: 0 Recognition successful.\
+> objects: Corresponding recognition results\
+> *Counting from 0，`"objects": [4]` The recognition result is identified as sequence 4, corresponding to the finger.
+
+# 📝  Contact me:
+youngjimmy8305@gmail.com
