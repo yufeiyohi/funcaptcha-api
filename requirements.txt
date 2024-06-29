@@ -1,5 +1,4 @@
 fastapi==0.109.2
-funcaptcha_challenger==0.15.1
 loguru==0.7.2
 Pillow==10.2.0
 pipeit==0.3.3
