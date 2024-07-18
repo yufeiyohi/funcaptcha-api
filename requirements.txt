@@ -1,8 +1,9 @@
-fastapi==0.109.2
-funcaptcha_challenger==0.15.1
-loguru==0.7.2
-Pillow==10.2.0
-pipeit==0.3.3
-pydantic==1.10.12
-requests==2.31.0
-uvicorn==0.27.1
+fastapi
+loguru
+Pillow
+pipeit
+pydantic
+requests
+uvicorn
+onnxruntime
+tqdm
