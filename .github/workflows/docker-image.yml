@@ -1,0 +1,26 @@
+name: Docker Image CI For [yufeiyohi/funcaptcha-api]
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  # 构建并上传 Docker镜像
+  build: 
+    runs-on: ubuntu-latest # 依赖的环境      
+    steps:
+      - uses: actions/checkout@v4  
+      - name: Set build date and time
+        id: set_build_datetime
+        run: echo "BUILD_DATETIME=$(date +%y%m%d%H%M)" >> $GITHUB_ENV
+      - name: Display Build date and time
+        run: echo "The build date and time is ${{ env.BUILD_DATETIME }}"
+      - name: Build the Docker Image
+        run: |
+          docker build -t yufeiyohi/funcaptcha-api -f Dockerfile .
+          docker tag yufeiyohi/funcaptcha-api yufeiyohi/funcaptcha-api:${{ env.BUILD_DATETIME }}
+      - name: Login to Registry
+        run: docker login --username=${{ secrets.DOCKERHUB_USER }} --password ${{ secrets.DOCKERHUB_TOKEN }}
+      - name: Push the Docker Image
+        run: |
+          docker push yufeiyohi/funcaptcha-api:${{ env.BUILD_DATETIME }}
+          docker push yufeiyohi/funcaptcha-api:latest
