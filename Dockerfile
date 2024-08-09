@@ -7,6 +7,8 @@ ENV BUILD_PREFIX=/app
 
 ADD . ${BUILD_PREFIX}
 
+WORKDIR /app
+
 RUN apt-get update \
     &&apt-get install -y --no-install-recommends bash wget vim \
     && cd ${BUILD_PREFIX} \
@@ -15,6 +17,8 @@ RUN apt-get update \
     && chmod +x ${BUILD_PREFIX}/downloadmodel.sh \
     && bash ${BUILD_PREFIX}/downloadmodel.sh
 
+ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONUNBUFFERED 1
 ENV PORT=8282
 EXPOSE $PORT
 
