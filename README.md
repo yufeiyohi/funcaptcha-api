@@ -74,6 +74,3 @@ curl --location --request POST 'http://127.0.0.1:8181/createTask' \
 > errorId: 0 Recognition successful.\
 > objects: Corresponding recognition results\
 > *Counting from 0，`"objects": [4]` The recognition result is identified as sequence 4, corresponding to the finger.
-
-# 📝  Contact me:
-youngjimmy8305@gmail.com
