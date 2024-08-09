@@ -8,3 +8,4 @@ uvicorn
 onnxruntime
 tqdm
 funcaptcha_challenger
+wget
