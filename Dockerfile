@@ -13,7 +13,7 @@ RUN apt-get update \
     && /usr/local/bin/python -m pip install --no-cache --upgrade pip \
     && pip install --no-cache -r requirements.txt \
     && chmod +x ${BUILD_PREFIX}/downloadmodel.sh \
-    $$ bash ${BUILD_PREFIX}/downloadmodel.sh
+    && bash ${BUILD_PREFIX}/downloadmodel.sh
 
 ENV PORT=8282
 EXPOSE $PORT
