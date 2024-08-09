@@ -12,7 +12,7 @@ from util.log import logger
 from util.model_support_fetcher import ModelSupportFetcher
 
 app = FastAPI()
-PORT = 8181
+PORT = 8282
 IS_DEBUG = True
 fetcher = ModelSupportFetcher()
 

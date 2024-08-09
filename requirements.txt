@@ -7,3 +7,4 @@ requests
 uvicorn
 onnxruntime
 tqdm
+funcaptcha_challenger

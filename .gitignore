@@ -3,3 +3,5 @@ venv/
 .syncthing*
 __pycache__
 .DS_Store
+.onnx
+funcaptcha_challenger/*.onnx

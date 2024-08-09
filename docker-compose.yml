@@ -1,11 +1,9 @@
 version: '3'
 services:
-  funcaptcha-server:
-    build:
-      context: .
-      dockerfile: Dockerfile
+  funcaptcha-api:
+    image: yufeiyohi/funcaptcha-api:latest
     ports:
-      - "8181:8181"
+      - "8282:8282"
     volumes:
       - ./local_resource:/container/mount/point
     restart: always

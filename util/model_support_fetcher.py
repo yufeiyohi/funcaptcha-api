@@ -13,7 +13,7 @@ class ModelSupportFetcher:
         self.fetch_model_list()
 
     def fetch_model_list(self):
-        url = "https://github.com/MrDgbot/funcaptcha-server/releases/download/model/version.json"
+        url = "https://github.com/yufeiyohi/funcaptcha-api/releases/download/model/version.json"
         response = requests.get(url)
         if response.status_code != 200:
             print("Failed to fetch model list")

@@ -1,16 +1,24 @@
-FROM python:3.10
-#RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
-#RUN apk add --no-cache musl-dev openssl-dev libffi-dev tzdata gcc ttf-dejavu
-#RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+FROM python:3.10-slim-bullseye
 
-COPY . /app/
-WORKDIR /app
-#RUN pip3 config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
-RUN pip3 install --upgrade pip
-RUN pip3 install --no-cache-dir --upgrade -r requirements.txt
-ENV PYTHONDONTWRITEBYTECODE 1
-ENV PYTHONUNBUFFERED 1
-ENV PORT=8181
+LABEL maintainer="yufeiyohi@outlook.com"
+ARG TZ='Asia/Shanghai'
+
+ENV BUILD_PREFIX=/app
+
+ADD . ${BUILD_PREFIX}
+
+RUN apt-get update \
+    &&apt-get install -y \
+    && cd ${BUILD_PREFIX} \
+    && /usr/local/bin/python -m pip install --no-cache --upgrade pip \
+    && pip install --no-cache -r requirements.txt \
+    && chmod +x ${BUILD_PREFIX}/downloadmodel.sh \
+    $$ bash ${BUILD_PREFIX}/downloadmodel.sh
+
+ENV PORT=8282
 EXPOSE $PORT
+
+# 设置时区
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 CMD uvicorn main:app --host 0.0.0.0 --port $PORT
