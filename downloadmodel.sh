@@ -1,25 +1,25 @@
-wget -P /app/funcaptcha_challenger https://github.com/yufeiyohi/funcaptcha-api/releases/download/model/3d_rollball_objects_cv.onnx
-wget -P /app/funcaptcha_challenger https://github.com/yufeiyohi/funcaptcha-api/releases/download/model/3d_rollball_objects_v2.onnx
-wget -P /app/funcaptcha_challenger https://github.com/yufeiyohi/funcaptcha-api/releases/download/model/BrokenJigsawbrokenjigsaw_swap.onnx
-wget -P /app/funcaptcha_challenger https://github.com/yufeiyohi/funcaptcha-api/releases/download/model/card.onnx
-wget -P /app/funcaptcha_challenger https://github.com/yufeiyohi/funcaptcha-api/releases/download/model/cardistance.onnx
-wget -P /app/funcaptcha_challenger https://github.com/yufeiyohi/funcaptcha-api/releases/download/model/conveyor.onnx
-wget -P /app/funcaptcha_challenger https://github.com/yufeiyohi/funcaptcha-api/releases/download/model/coordinatesmatch.onnx
-wget -P /app/funcaptcha_challenger https://github.com/yufeiyohi/funcaptcha-api/releases/download/model/coordinatesmatch_cv.onnx
-wget -P /app/funcaptcha_challenger https://github.com/yufeiyohi/funcaptcha-api/releases/download/model/counting.onnx
-wget -P /app/funcaptcha_challenger https://github.com/yufeiyohi/funcaptcha-api/releases/download/model/dicematch.onnx
-wget -P /app/funcaptcha_challenger https://github.com/yufeiyohi/funcaptcha-api/releases/download/model/dice_pair.onnx
-wget -P /app/funcaptcha_challenger https://github.com/yufeiyohi/funcaptcha-api/releases/download/model/frankenhead.onnx
-wget -P /app/funcaptcha_challenger https://github.com/yufeiyohi/funcaptcha-api/releases/download/model/hand_number_puzzle.onnx
-wget -P /app/funcaptcha_challenger https://github.com/yufeiyohi/funcaptcha-api/releases/download/model/hopscotch_highsec.onnx
-wget -P /app/funcaptcha_challenger https://github.com/yufeiyohi/funcaptcha-api/releases/download/model/knotsCrossesCircle.onnx
-wget -P /app/funcaptcha_challenger https://github.com/yufeiyohi/funcaptcha-api/releases/download/model/penguin.onnx
-wget -P /app/funcaptcha_challenger https://github.com/yufeiyohi/funcaptcha-api/releases/download/model/penguins-icon.onnx
-wget -P /app/funcaptcha_challenger https://github.com/yufeiyohi/funcaptcha-api/releases/download/model/penguins.onnx
-wget -P /app/funcaptcha_challenger https://github.com/yufeiyohi/funcaptcha-api/releases/download/model/rockstack.onnx
-wget -P /app/funcaptcha_challenger https://github.com/yufeiyohi/funcaptcha-api/releases/download/model/rockstack_v2.onnx
-wget -P /app/funcaptcha_challenger https://github.com/yufeiyohi/funcaptcha-api/releases/download/model/shadows.onnx
-wget -P /app/funcaptcha_challenger https://github.com/yufeiyohi/funcaptcha-api/releases/download/model/train_coordinates.onnx
-wget -P /app/funcaptcha_challenger https://github.com/yufeiyohi/funcaptcha-api/releases/download/model/train_coordinates_cv.onnx
-wget -P /app/funcaptcha_challenger https://github.com/yufeiyohi/funcaptcha-api/releases/download/model/unbentobjects.onnx
-wget -P /app/funcaptcha_challenger https://github.com/yufeiyohi/funcaptcha-api/releases/download/model/version.json
+wget -q -P /app/funcaptcha_challenger https://github.com/yufeiyohi/funcaptcha-api/releases/download/model/3d_rollball_objects_cv.onnx
+wget -q -P /app/funcaptcha_challenger https://github.com/yufeiyohi/funcaptcha-api/releases/download/model/3d_rollball_objects_v2.onnx
+wget -q -P /app/funcaptcha_challenger https://github.com/yufeiyohi/funcaptcha-api/releases/download/model/BrokenJigsawbrokenjigsaw_swap.onnx
+wget -q -P /app/funcaptcha_challenger https://github.com/yufeiyohi/funcaptcha-api/releases/download/model/card.onnx
+wget -q -P /app/funcaptcha_challenger https://github.com/yufeiyohi/funcaptcha-api/releases/download/model/cardistance.onnx
+wget -q -P /app/funcaptcha_challenger https://github.com/yufeiyohi/funcaptcha-api/releases/download/model/conveyor.onnx
+wget -q -P /app/funcaptcha_challenger https://github.com/yufeiyohi/funcaptcha-api/releases/download/model/coordinatesmatch.onnx
+wget -q -P /app/funcaptcha_challenger https://github.com/yufeiyohi/funcaptcha-api/releases/download/model/coordinatesmatch_cv.onnx
+wget -q -P /app/funcaptcha_challenger https://github.com/yufeiyohi/funcaptcha-api/releases/download/model/counting.onnx
+wget -q -P /app/funcaptcha_challenger https://github.com/yufeiyohi/funcaptcha-api/releases/download/model/dicematch.onnx
+wget -q -P /app/funcaptcha_challenger https://github.com/yufeiyohi/funcaptcha-api/releases/download/model/dice_pair.onnx
+wget -q -P /app/funcaptcha_challenger https://github.com/yufeiyohi/funcaptcha-api/releases/download/model/frankenhead.onnx
+wget -q -P /app/funcaptcha_challenger https://github.com/yufeiyohi/funcaptcha-api/releases/download/model/hand_number_puzzle.onnx
+wget -q -P /app/funcaptcha_challenger https://github.com/yufeiyohi/funcaptcha-api/releases/download/model/hopscotch_highsec.onnx
+wget -q -P /app/funcaptcha_challenger https://github.com/yufeiyohi/funcaptcha-api/releases/download/model/knotsCrossesCircle.onnx
+wget -q -P /app/funcaptcha_challenger https://github.com/yufeiyohi/funcaptcha-api/releases/download/model/penguin.onnx
+wget -q -P /app/funcaptcha_challenger https://github.com/yufeiyohi/funcaptcha-api/releases/download/model/penguins-icon.onnx
+wget -q -P /app/funcaptcha_challenger https://github.com/yufeiyohi/funcaptcha-api/releases/download/model/penguins.onnx
+wget -q -P /app/funcaptcha_challenger https://github.com/yufeiyohi/funcaptcha-api/releases/download/model/rockstack.onnx
+wget -q -P /app/funcaptcha_challenger https://github.com/yufeiyohi/funcaptcha-api/releases/download/model/rockstack_v2.onnx
+wget -q -P /app/funcaptcha_challenger https://github.com/yufeiyohi/funcaptcha-api/releases/download/model/shadows.onnx
+wget -q -P /app/funcaptcha_challenger https://github.com/yufeiyohi/funcaptcha-api/releases/download/model/train_coordinates.onnx
+wget -q -P /app/funcaptcha_challenger https://github.com/yufeiyohi/funcaptcha-api/releases/download/model/train_coordinates_cv.onnx
+wget -q -P /app/funcaptcha_challenger https://github.com/yufeiyohi/funcaptcha-api/releases/download/model/unbentobjects.onnx
+wget -q -P /app/funcaptcha_challenger https://github.com/yufeiyohi/funcaptcha-api/releases/download/model/version.json
