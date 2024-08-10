@@ -1,25 +1,25 @@
-wget -q -P /app/funcaptcha_challenger https://www.tbooks.com.cn/funcaptcha_model/3d_rollball_objects_cv.onnx
-wget -q -P /app/funcaptcha_challenger https://www.tbooks.com.cn/funcaptcha_model/3d_rollball_objects_v2.onnx
-wget -q -P /app/funcaptcha_challenger https://www.tbooks.com.cn/funcaptcha_model/BrokenJigsawbrokenjigsaw_swap.onnx
-wget -q -P /app/funcaptcha_challenger https://www.tbooks.com.cn/funcaptcha_model/card.onnx
-wget -q -P /app/funcaptcha_challenger https://www.tbooks.com.cn/funcaptcha_model/cardistance.onnx
-wget -q -P /app/funcaptcha_challenger https://www.tbooks.com.cn/funcaptcha_model/conveyor.onnx
-wget -q -P /app/funcaptcha_challenger https://www.tbooks.com.cn/funcaptcha_model/coordinatesmatch.onnx
-wget -q -P /app/funcaptcha_challenger https://www.tbooks.com.cn/funcaptcha_model/coordinatesmatch_cv.onnx
-wget -q -P /app/funcaptcha_challenger https://www.tbooks.com.cn/funcaptcha_model/counting.onnx
-wget -q -P /app/funcaptcha_challenger https://www.tbooks.com.cn/funcaptcha_model/dicematch.onnx
-wget -q -P /app/funcaptcha_challenger https://www.tbooks.com.cn/funcaptcha_model/dice_pair.onnx
-wget -q -P /app/funcaptcha_challenger https://www.tbooks.com.cn/funcaptcha_model/frankenhead.onnx
-wget -q -P /app/funcaptcha_challenger https://www.tbooks.com.cn/funcaptcha_model/hand_number_puzzle.onnx
-wget -q -P /app/funcaptcha_challenger https://www.tbooks.com.cn/funcaptcha_model/hopscotch_highsec.onnx
-wget -q -P /app/funcaptcha_challenger https://www.tbooks.com.cn/funcaptcha_model/knotsCrossesCircle.onnx
-wget -q -P /app/funcaptcha_challenger https://www.tbooks.com.cn/funcaptcha_model/penguin.onnx
-wget -q -P /app/funcaptcha_challenger https://www.tbooks.com.cn/funcaptcha_model/penguins-icon.onnx
-wget -q -P /app/funcaptcha_challenger https://www.tbooks.com.cn/funcaptcha_model/penguins.onnx
-wget -q -P /app/funcaptcha_challenger https://www.tbooks.com.cn/funcaptcha_model/rockstack.onnx
-wget -q -P /app/funcaptcha_challenger https://www.tbooks.com.cn/funcaptcha_model/rockstack_v2.onnx
-wget -q -P /app/funcaptcha_challenger https://www.tbooks.com.cn/funcaptcha_model/shadows.onnx
-wget -q -P /app/funcaptcha_challenger https://www.tbooks.com.cn/funcaptcha_model/train_coordinates.onnx
-wget -q -P /app/funcaptcha_challenger https://www.tbooks.com.cn/funcaptcha_model/train_coordinates_cv.onnx
-wget -q -P /app/funcaptcha_challenger https://www.tbooks.com.cn/funcaptcha_model/unbentobjects.onnx
-wget -q -P /app/funcaptcha_challenger https://www.tbooks.com.cn/funcaptcha_model/version.json
+wget -P /app/funcaptcha_challenger https://www.tbooks.com.cn/funcaptcha_model/3d_rollball_objects_cv.onnx
+wget -P /app/funcaptcha_challenger https://www.tbooks.com.cn/funcaptcha_model/3d_rollball_objects_v2.onnx
+wget -P /app/funcaptcha_challenger https://www.tbooks.com.cn/funcaptcha_model/BrokenJigsawbrokenjigsaw_swap.onnx
+wget -P /app/funcaptcha_challenger https://www.tbooks.com.cn/funcaptcha_model/card.onnx
+wget -P /app/funcaptcha_challenger https://www.tbooks.com.cn/funcaptcha_model/cardistance.onnx
+wget -P /app/funcaptcha_challenger https://www.tbooks.com.cn/funcaptcha_model/conveyor.onnx
+wget -P /app/funcaptcha_challenger https://www.tbooks.com.cn/funcaptcha_model/coordinatesmatch.onnx
+wget -P /app/funcaptcha_challenger https://www.tbooks.com.cn/funcaptcha_model/coordinatesmatch_cv.onnx
+wget -P /app/funcaptcha_challenger https://www.tbooks.com.cn/funcaptcha_model/counting.onnx
+wget -P /app/funcaptcha_challenger https://www.tbooks.com.cn/funcaptcha_model/dicematch.onnx
+wget -P /app/funcaptcha_challenger https://www.tbooks.com.cn/funcaptcha_model/dice_pair.onnx
+wget -P /app/funcaptcha_challenger https://www.tbooks.com.cn/funcaptcha_model/frankenhead.onnx
+wget -P /app/funcaptcha_challenger https://www.tbooks.com.cn/funcaptcha_model/hand_number_puzzle.onnx
+wget -P /app/funcaptcha_challenger https://www.tbooks.com.cn/funcaptcha_model/hopscotch_highsec.onnx
+wget -P /app/funcaptcha_challenger https://www.tbooks.com.cn/funcaptcha_model/knotsCrossesCircle.onnx
+wget -P /app/funcaptcha_challenger https://www.tbooks.com.cn/funcaptcha_model/penguin.onnx
+wget -P /app/funcaptcha_challenger https://www.tbooks.com.cn/funcaptcha_model/penguins-icon.onnx
+wget -P /app/funcaptcha_challenger https://www.tbooks.com.cn/funcaptcha_model/penguins.onnx
+wget -P /app/funcaptcha_challenger https://www.tbooks.com.cn/funcaptcha_model/rockstack.onnx
+wget -P /app/funcaptcha_challenger https://www.tbooks.com.cn/funcaptcha_model/rockstack_v2.onnx
+wget -P /app/funcaptcha_challenger https://www.tbooks.com.cn/funcaptcha_model/shadows.onnx
+wget -P /app/funcaptcha_challenger https://www.tbooks.com.cn/funcaptcha_model/train_coordinates.onnx
+wget -P /app/funcaptcha_challenger https://www.tbooks.com.cn/funcaptcha_model/train_coordinates_cv.onnx
+wget -P /app/funcaptcha_challenger https://www.tbooks.com.cn/funcaptcha_model/unbentobjects.onnx
+wget -P /app/funcaptcha_challenger https://www.tbooks.com.cn/funcaptcha_model/version.json

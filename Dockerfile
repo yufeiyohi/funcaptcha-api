@@ -15,7 +15,8 @@ RUN apt-get update \
     && /usr/local/bin/python -m pip install --no-cache --upgrade pip \
     && pip install --no-cache -r requirements.txt \
     && chmod +x ${BUILD_PREFIX}/downloadmodel.sh \
-    && chmod +x ${BUILD_PREFIX}/downloadmodelcn.sh
+    && chmod +x ${BUILD_PREFIX}/downloadmodelcn.sh \
+    && chmod +x ${BUILD_PREFIX}/downloadmodelcf.sh
     #&& bash ${BUILD_PREFIX}/downloadmodel.sh
 
 ENV PYTHONDONTWRITEBYTECODE 1
