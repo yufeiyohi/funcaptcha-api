@@ -2,6 +2,7 @@ version: '3'
 services:
   funcaptcha-api:
     image: yufeiyohi/funcaptcha-api:latest
+    name: funcaptcha-api
     ports:
       - "8282:8282"
     volumes:
